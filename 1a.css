@@ -1,76 +1,134 @@
-.logopi{
-    max-width: 200px;
-height:auto;
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
 }
 
-pre{
-    background-color: rgba(192, 238, 117, 0.767);
-    display:flex;
-    align-items: right;
-    color: black;
-    word-spacing: 20px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #1a86f2;
+  color: white;
 }
-header{
-    background-color:  rgba(192, 238, 117, 0.767);
-    display: flex;
-    text-align: left;
-    padding: 1rem;
-    justify-content: space-between;
-    
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+ 
+  color: #1a86f2;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
- nav ul{
-    display:flex;
-    padding:15px;
-    justify-content: space-around;
-    margin: 0;
-    padding:15px;
-    background-color: rgb(47, 47, 126);
-    color: aliceblue;
-}
-nav ul li{
-    list-style-type: none;
-    color: aliceblue;
-}
-a{
-    color: aliceblue;
-    text-decoration: none;
-}
-a:hover{
-    background-color: rgb(160, 154, 154);
+.college-name {
+  text-align: right;
+  font-size: 16px;
 }
 
+/* Navbar */
+.navbar {
+  background: #5f9bd4;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.navbar a, .dropbtn {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.navbar a:hover, .dropbtn:hover {
+  background: #004080;
+}
+.nav a{
+  text-decoration: none;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide the checkbox */
+#dept-toggle {
+  display: none;
+}
+.dropdown-content {
+  display: none;
+  max-height:0 ;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transform: top 0,3s ease;
+}
+.dropdown-content a {
+  color: #003366;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background: #ddd;
+}
+
+/* Show dropdown only when checkbox is checked */
+
+.dropdown:focus-within .dropdown-content{
+  display: block;
+  top: 100%;
+}
 
 
-nav ul li.a{
-    text-decoration: none;
-    transition: 0.3s;
-    color: aliceblue;
+
+
+
+.main {
+  padding: 20px;
+  text-align: center;
 }
-main{
-    font-size: 23px;
-    font-family:Arial, Helvetica, sans-serif;
+.photo {
+ 
+  height: 250px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
 }
-footer{
-    text-align:center;
-    padding:1rem 0;
-    background-color:#444;
-    color:#fff;
-   
-  .social-links a{
-    color:#fff;
-    text-decoration:none;
-    margin:0 10px;
-  }
-  }
-  @media screen and (max-width:768px){
-    header{
-        flex-direction:colomn;
-    }
-    .logo{
-        margin-bottom:1rem;
-    }
-  }
-    
+.info {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+.footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
